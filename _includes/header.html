@@ -8,9 +8,11 @@
         
         <div class="column-18">
             <nav class="top-nav bg-white nav-responsive">
-                {% for page in site.pages %}
-                  {% if page.title %}<li><a class="page-link" href="{{ page.url | prepend: site.baseurl }}">{{ page.title }}</a></li>{% endif %}
-                {% endfor %}
+                <ul class="text-right list-inline text-uppercase">
+                    {% for page in site.pages %}
+                      {% if page.title %}<li><a class="page-link" href="{{ page.url | prepend: site.baseurl }}">{{ page.title }}</a></li>{% endif %}
+                    {% endfor %}
+                </ul>
             </nav><!-- .top-nav -->
         </div><!-- .column-18 -->
     </div><!-- .row -->
