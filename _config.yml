@@ -5,7 +5,7 @@ description: "Concise is a lightweight front-end framework that provides a numbe
 author: "Keenan Payne"
 host: localhost
 port: 4000
-baseurl: "/concise"
+baseurl: "/concise.css"
 twitter_username: concisecss
 github_username:  concisecss
 
