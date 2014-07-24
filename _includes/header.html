@@ -1,19 +1,19 @@
 <div class="container center">
-    <div class="row no-margin top-nav-container">
-        <div class="column-6 logo">
-            <a href="{{ site.baseurl }}/">
-                <img src="{{ site.baseurl }}/images/logo.svg" alt="Concise Logo" />
-            </a>
-        </div><!-- .column-6 -->
-        
-        <div class="column-18">
-            <nav class="top-nav bg-white nav-responsive">
-                <ul class="text-right list-inline text-uppercase">
-                    {% for page in site.pages %}
-                      {% if page.in-top-nav %}<li><a class="page-link" href="{{ page.url | prepend: site.baseurl }}">{{ page.title }}</a></li>{% endif %}
-                    {% endfor %}
-                </ul>
-            </nav><!-- .top-nav -->
-        </div><!-- .column-18 -->
-    </div><!-- .row -->
+  <div class="row no-margin top-nav-container">
+    <div class="column-6 logo">
+      <a href="{{ site.baseurl }}/">
+        <img src="{{ site.baseurl }}/images/logo.svg" alt="Concise Logo" />
+      </a>
+    </div><!-- .column-6 -->
+    
+    <div class="column-18">
+      <nav class="top-nav bg-white nav-responsive">
+        <ul class="text-right list-inline text-uppercase">
+          {% for page in site.pages %}
+            {% if page.in-top-nav %}<li><a class="page-link" href="{{ page.url | prepend: site.baseurl }}">{{ page.title }}</a></li>{% endif %}
+          {% endfor %}
+        </ul>
+      </nav><!-- .top-nav -->
+    </div><!-- .column-18 -->
+  </div><!-- .row -->
 </div><!-- .container -->
