@@ -1,25 +1,23 @@
-<?php 
-    $page = 'add-ons';
-    $innerpage = 'social-media-buttons';
-    $tagline = 'Add Ons / Social Media Buttons';
-    include("../includes/head.php"); 
-?>
-
-<?php include("../includes/header.php"); ?>
+---
+layout: add-ons
+title: Add-Ons
+subtitle: Social Media Buttons
+permalink: /social-media-buttons/
+---
 
 <style type="text/css">
 .btn.icon { 
-    font-family: 'source-sans-pro', 'Segoe UI', 'Myriad Pro', Helvetica, Tahoma, sans-serif;
-    font-weight: bold;
-    margin-bottom: 10px; 
+  font-family: 'source-sans-pro', 'Segoe UI', 'Myriad Pro', Helvetica, Tahoma, sans-serif;
+  font-weight: bold;
+  margin-bottom: 10px; 
 }
 
 @media (min-width: 48em) { .btn.icon { width: 205px; } }
 
 .btn.icon:before { 
-    font-family: FontAwesome;
-    font-weight: normal;
-    margin-right: 10px; 
+  font-family: FontAwesome;
+  font-weight: normal;
+  margin-right: 10px; 
 }
 
 .btn.icon.dribbble { background-color: #f36798; }
@@ -101,67 +99,58 @@
 .btn.icon.youtube:before { content: "\F167"; }
 </style>
 
-<?php include('../includes/add-ons/masthead.php'); ?>
+<h1 class="no-margin">Social Media Buttons</h1>
 
-<div class="container center">
-    <div class="row no-margin">
-        <div class="column-5 sidebar">
-            <?php include('../includes/add-ons/navigation.php'); ?>
-        </div><!-- .column-5 -->
-        
-        <div class="column-19 content">
-            <h1 class="no-margin">Social Media Buttons</h1>
-            
-            <hr />
-            
-            <p>These buttons are just an extension of the <code>.btn</code> class and rely on the <a href="http://fortawesome.github.io/Font-Awesome/" target="_blank">Font Awesome</a> icon font.</p>
-            
-            <div class="well preview">
-                <div class="preview-heading">
-                    <strong>Preview</strong>
-                </div><!-- .preview-heading -->
-                
-                <div class="preview-body">
-                    <a class="btn icon dribbble">Dribbble</a>
+<hr />
 
-                    <a class="btn icon dropbox">Dropbox</a>
-                    
-                    <a class="btn icon facebook">Facebook</a>
+<p>These buttons are just an extension of the <code>.btn</code> class and rely on the <a href="http://fortawesome.github.io/Font-Awesome/" target="_blank">Font Awesome</a> icon font.</p>
 
-                    <a class="btn icon flickr">Flickr</a>
+<div class="well preview">
+  <div class="preview-heading">
+    <strong>Preview</strong>
+  </div><!-- .preview-heading -->
+  
+  <div class="preview-body">
+    <a class="btn icon dribbble">Dribbble</a>
 
-                    <a class="btn icon github">GitHub</a>
+    <a class="btn icon dropbox">Dropbox</a>
+    
+    <a class="btn icon facebook">Facebook</a>
 
-                    <a class="btn icon googleplus">Google+</a>
+    <a class="btn icon flickr">Flickr</a>
 
-                    <a class="btn icon instagram">Instagram</a>
+    <a class="btn icon github">GitHub</a>
 
-                    <a class="btn icon linkedin">LinkedIn</a>
+    <a class="btn icon googleplus">Google+</a>
 
-                    <a class="btn icon pinterest">Pinterest</a>
+    <a class="btn icon instagram">Instagram</a>
 
-                    <a class="btn icon skype">Skype</a>
+    <a class="btn icon linkedin">LinkedIn</a>
 
-                    <a class="btn icon tumblr">Tumblr</a>
+    <a class="btn icon pinterest">Pinterest</a>
 
-                    <a class="btn icon twitter">Twitter</a>
+    <a class="btn icon skype">Skype</a>
 
-                    <a class="btn icon youtube">YouTube</a>
-                </div><!-- .preview-body -->
-                
-                <div class="preview-footer">
-                    <strong>CSS</strong>
-                    
-                    <pre><code>/* Icon Buttons */
+    <a class="btn icon tumblr">Tumblr</a>
+
+    <a class="btn icon twitter">Twitter</a>
+
+    <a class="btn icon youtube">YouTube</a>
+  </div><!-- .preview-body -->
+  
+  <div class="preview-footer">
+    <strong>CSS</strong>
+    
+    <pre><code>/* Icon Buttons */
 .btn.icon { 
-    font-family: "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
-    font-weight: bold;
+  font-family: "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-weight: bold;
 }
 
 .btn.icon:before { 
-    font-family: FontAwesome;
-    font-weight: normal;
-    margin-right: 10px; 
+  font-family: FontAwesome;
+  font-weight: normal;
+  margin-right: 10px; 
 }
 
 /* Dribbble */
@@ -228,12 +217,12 @@
 .btn.icon.youtube { background-color: #de3434; }
 .btn.icon.youtube:hover { background-color: #ec3636; }
 .btn.icon.youtube:before { content: "\F167"; }</code></pre>
-                </div><!-- .preview-footer -->
-                
-                <div class="preview-footer">
-                    <strong>HTML</strong>
-                    
-                    <pre><code>&lt;a class="btn icon dribbble"&gt;Dribbble&lt;/a&gt;
+</div><!-- .preview-footer -->
+
+<div class="preview-footer">
+  <strong>HTML</strong>
+  
+  <pre><code>&lt;a class="btn icon dribbble"&gt;Dribbble&lt;/a&gt;
 
 &lt;a class="btn icon dropbox"&gt;Dropbox&lt;/a&gt;
 
@@ -258,14 +247,9 @@
 &lt;a class="btn icon twitter"&gt;Twitter&lt;/a&gt;
 
 &lt;a class="btn icon youtube"&gt;YouTube&lt;/a&gt;</code></pre>
-                </div><!-- .preview-footer -->
-            </div><!-- .preview -->    
+  </div><!-- .preview-footer -->
+</div><!-- .preview -->  
 
-            <p class="text-center">
-                <a href="https://github.com/ConciseCSS/addons" target="_blank" class="btn border-radius bg-gray btn-small">Fork on GitHub</a>
-            </p>
-        </div><!-- .column-19 -->
-    </div><!-- .row -->
-</div><!-- .container -->
-
-<?php include("../includes/footer.php"); ?>
+<p class="text-center">
+  <a href="https://github.com/ConciseCSS/addons" target="_blank" class="btn border-radius bg-gray btn-small">Fork on GitHub</a>
+</p>
