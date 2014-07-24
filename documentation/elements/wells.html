@@ -1,0 +1,60 @@
+<?php 
+    $page = 'documentation';
+    $innerpage = 'wells';
+    $tagline = 'Documentation / Wells';
+    include("../../includes/head.php"); 
+?>
+
+<?php include("../../includes/header.php"); ?>
+
+<style>.preview .well { margin-bottom: 12px; }</style>
+
+<div class="masthead">
+    <div class="container center">
+        <h1 class="kilo no-margin color-white">Documentation</h1>
+        
+        <h2 class="no-margin">Learn how to use all of great features that Concise provides.</h2>
+    </div><!-- .container -->
+</div><!-- .masthead -->
+
+<div class="container center">
+    <div class="row no-margin">
+        <div class="column-5 sidebar">
+            <nav class="nav-vertical pills nav-responsive-center nav-responsive-text">               
+                <?php include('../../includes/documentation/navigation.php'); ?>
+            </nav><!-- .nav-vertical -->
+        </div><!-- .column-5 -->
+        
+        <div class="column-19 content">
+            <h1 class="no-margin">Wells</h1>
+            
+            <hr />
+                        
+            <p>The <code>.well</code> class is used to display a box with a border around any element.</p>
+            
+            <div class="well preview">
+                <div class="preview-heading">
+                    <strong>Preview</strong>
+                </div><!-- .preview-heading -->
+                
+                <div class="preview-body">
+                    <div class="well">
+                        <p>Here is a default well element</p>
+                    </div><!-- .well .bg-green -->
+                    
+                    <div class="well bg-white border-radius">
+                        <p>Here is a white well element using the <code>.border-radius</code> class</p>
+                    </div><!-- .well .bg-green -->
+                </div><!-- .preview-body -->
+                
+                <div class="preview-footer">
+                    <strong>Code</strong>
+                    
+                    <pre><code>&lt;div class="well"&gt;...&lt;/div&gt;</code></pre>
+                </div><!-- .preview-footer -->
+            </div><!-- .preview -->
+        </div><!-- .column-19 -->
+    </div><!-- .row -->
+</div><!-- .container -->
+
+<?php include("../../includes/footer.php"); ?>

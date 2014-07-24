@@ -1,0 +1,74 @@
+<?php 
+    $page = 'documentation';
+    $innerpage = 'colors';
+    $tagline = 'Documentation / Type Colors';
+    include("../../includes/head.php"); 
+?>
+
+<?php include("../../includes/header.php"); ?>
+
+<div class="masthead">
+    <div class="container center">
+        <h1 class="kilo no-margin color-white">Documentation</h1>
+        
+        <h2 class="no-margin">Learn how to use all of great features that Concise provides.</h2>
+    </div><!-- .container -->
+</div><!-- .masthead -->
+
+<div class="container center">
+    <div class="row no-margin">
+        <div class="column-5 sidebar">
+            <nav class="nav-vertical pills nav-responsive-center nav-responsive-text">               
+                <?php include('../../includes/documentation/navigation.php'); ?>
+            </nav><!-- .nav-vertical -->
+        </div><!-- .column-5 -->
+        
+        <div class="column-19 content">
+            <h1 class="no-margin">Colors</h1>
+            
+            <hr />
+                        
+            <p>Nobody constantly wants black text on a black background, do they? Of course not. That's why Concise comes with various classes that can be used to change the color of text.</p>
+            
+            <p class="note preprocessor"><strong>Preprocessor Note:</strong> You can change the <code>$color-*</code> variables in the <code>_defaults.scss</code> file to adjust any of the base colors.</p>
+            
+            <p class="note"><strong>Note:</strong> I have given the white text a black background just for the purpose of demonstration.</p>
+            
+            <div class="well preview">
+                <div class="preview-heading">
+                    <strong>Preview</strong>
+                </div><!-- .preview-heading -->
+                
+                <div class="preview-body">
+                    <p class="bg-black color-white">Here is some white colored text.</p>
+            
+                    <p class="color-black">Here is some black colored text.</p>
+                    
+                    <p class="color-gray">Here is some gray colored text.</p>
+                    
+                    <p class="color-green">Here is some green colored text.</p>
+                    
+                    <p class="color-blue">Here is some blue colored text.</p>
+                    
+                    <p class="color-yellow">Here is some yellow colored text.</p>
+                    
+                    <p class="color-red">Here is some red colored text.</p>
+                </div><!-- .preview-body -->
+                
+                <div class="preview-footer">
+                    <strong>Code</strong>
+                    
+                    <pre><code>&lt;p class=&quot;color-white&quot;&gt;...&lt;/p&gt;
+&lt;p class=&quot;color-black&quot;&gt;...&lt;/p&gt;
+&lt;p class=&quot;color-gray&quot;&gt;...&lt;/p&gt;
+&lt;p class=&quot;color-green&quot;&gt;...&lt;/p&gt;
+&lt;p class=&quot;color-blue&quot;&gt;...&lt;/p&gt;
+&lt;p class=&quot;color-yellow&quot;&gt;...&lt;/p&gt;
+&lt;p class=&quot;color-red&quot;&gt;...&lt;/p&gt;</code></pre>
+                </div><!-- .preview-footer -->
+            </div><!-- .preview -->
+        </div><!-- .column-19 -->
+    </div><!-- .row -->
+</div><!-- .container -->
+
+<?php include("../../includes/footer.php"); ?>

@@ -1,0 +1,56 @@
+<?php 
+    $page = 'documentation';
+    $innerpage = 'carets';
+    $tagline = 'Documentation / Carets';
+    include("../../includes/head.php"); 
+?>
+
+<?php include("../../includes/header.php"); ?>
+
+<style>
+    .preview-footer { margin-top: 15px; }
+</style>
+
+<div class="masthead">
+    <div class="container center">
+        <h1 class="kilo no-margin color-white">Documentation</h1>
+        
+        <h2 class="no-margin">Learn how to use all of great features that Concise provides.</h2>
+    </div><!-- .container -->
+</div><!-- .masthead -->
+
+<div class="container center">
+    <div class="row no-margin">
+        <div class="column-5 sidebar">
+            <nav class="nav-vertical pills nav-responsive-center nav-responsive-text">               
+                <?php include('../../includes/documentation/navigation.php'); ?>
+            </nav><!-- .nav-vertical -->
+        </div><!-- .column-5 -->
+        
+        <div class="column-19 content">
+            <h1 class="no-margin">Carets</h1>
+            
+            <hr />
+                        
+            <p>If you want to indicate something as a dropdown, it could be helpful to have a caret icon next to the given text or image. The <code>.caret</code> class does just this without the use of an icon font of any kind, just pure CSS3.</p>
+            
+            <div class="well preview">
+                <div class="preview-heading">
+                    <strong>Preview</strong>
+                </div><!-- .preview-heading -->
+                
+                <div class="preview-body">
+                    <h4 class="no-margin">Dropdown <span class="caret"></span></h4>
+                </div><!-- .preview-body -->
+                
+                <div class="preview-footer">
+                    <strong>Code</strong>
+                    
+                    <pre><code>&lt;span class=&quot;caret&quot;&gt;&lt;/span&gt;</code></pre>
+                </div><!-- .preview-footer -->
+            </div><!-- .preview -->
+        </div><!-- .column-19 -->
+    </div><!-- .row -->
+</div><!-- .container -->
+
+<?php include("../../includes/footer.php"); ?>

@@ -1,0 +1,52 @@
+<?php 
+    $page = 'documentation';
+    $innerpage = 'remove-margin';
+    $tagline = 'Documentation / Remove Margin';
+    include("../../includes/head.php"); 
+?>
+
+<?php include("../../includes/header.php"); ?>
+
+<div class="masthead">
+    <div class="container center">
+        <h1 class="kilo no-margin color-white">Documentation</h1>
+        
+        <h2 class="no-margin">Learn how to use all of great features that Concise provides.</h2>
+    </div><!-- .container -->
+</div><!-- .masthead -->
+
+<div class="container center">
+    <div class="row no-margin">
+        <div class="column-5 sidebar">
+            <nav class="nav-vertical pills nav-responsive-center nav-responsive-text">               
+                <?php include('../../includes/documentation/navigation.php'); ?>
+            </nav><!-- .nav-vertical -->
+        </div><!-- .column-5 -->
+        
+        <div class="column-19 content">
+            <h1 class="no-margin">Remove Margin</h1>
+            
+            <hr />
+                        
+            <p>The margin of any element can easily be removed by using the <code>.no-margin</code> class.</p>
+            
+            <div class="well preview">
+                <div class="preview-heading">
+                    <strong>Preview</strong>
+                </div><!-- .preview-heading -->
+                
+                <div class="preview-body">
+                    <h3 class="no-margin">Heading with no margin</h3>
+                </div><!-- .preview-body -->
+                
+                <div class="preview-footer">
+                    <strong>Code</strong>
+                    
+                    <pre><code>&lt;h3 class="no-margin"&gt;...&lt;/h3&gt;</code></pre>
+                </div><!-- .preview-footer -->
+            </div><!-- .preview -->
+        </div><!-- .column-19 -->
+    </div><!-- .row -->
+</div><!-- .container -->
+
+<?php include("../../includes/footer.php"); ?>

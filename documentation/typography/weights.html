@@ -1,0 +1,74 @@
+<?php 
+    $page = 'documentation';
+    $innerpage = 'weights';
+    $tagline = 'Documentation / Weights';
+    include("../../includes/head.php"); 
+?>
+
+<?php include("../../includes/header.php"); ?>
+
+<div class="masthead">
+    <div class="container center">
+        <h1 class="kilo no-margin color-white">Documentation</h1>
+        
+        <h2 class="no-margin">Learn how to use all of great features that Concise provides.</h2>
+    </div><!-- .container -->
+</div><!-- .masthead -->
+
+<div class="container center">
+    <div class="row no-margin">
+        <div class="column-5 sidebar">
+            <nav class="nav-vertical pills nav-responsive-center nav-responsive-text">               
+                <?php include('../../includes/documentation/navigation.php'); ?>
+            </nav><!-- .nav-vertical -->
+        </div><!-- .column-5 -->
+        
+        <div class="column-19 content">
+            <h1 class="no-margin">Font Weights</h1>
+            
+            <hr />
+                       
+            <p>Three <strong>font-weight</strong> helper classes have been added for easy use with typography.</p>
+            
+            <table class="full border-all fill-odd">
+                    <thead>
+                        <tr>
+                            <th scope="col">Class</th>
+                            <th scope="col">Font Weight</th>
+                        </tr>
+                    </thead>
+                    
+                    <tbody>
+                        <tr>
+                            <td><code>.weight-light</code></td>
+                            <td>300</td>
+                        </tr>
+                        
+                        <tr>
+                            <td><code>.weight-normal</code></td>
+                            <td>400</td>
+                        </tr>
+                        
+                         <tr>
+                            <td><code>.weight-semibold</code></td>
+                            <td>600</td>
+                        </tr>
+                    </tbody>
+                </table>
+            
+            <p class="note"><strong>Note:</strong> Only fonts that have the proper weights will be able to take advantage of these helper classes.</p>
+            
+            <div class="well preview">                
+                <div class="preview-footer">
+                    <strong>Code</strong>
+                    
+                    <pre><code>&lt;h2 class="weight-light"&gt;...&lt;/h2&gt;               
+&lt;h2 class="weight-normal"&gt;...&lt;/h2&gt;
+&lt;h2 class="weight-semibold"&gt;...&lt;/h2&gt;</code></pre>
+                </div><!-- .preview-footer -->
+            </div><!-- .preview -->
+        </div><!-- .column-19 -->
+    </div><!-- .row -->
+</div><!-- .container -->
+
+<?php include("../../includes/footer.php"); ?>

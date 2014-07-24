@@ -1,0 +1,52 @@
+<?php 
+    $page = 'documentation';
+    $innerpage = 'ampersand';
+    $tagline = 'Documentation / Ampersand';
+    include("../../includes/head.php"); 
+?>
+
+<?php include("../../includes/header.php"); ?>
+
+<div class="masthead">
+    <div class="container center">
+        <h1 class="kilo no-margin color-white">Documentation</h1>
+        
+        <h2 class="no-margin">Learn how to use all of great features that Concise provides.</h2>
+    </div><!-- .container -->
+</div><!-- .masthead -->
+
+<div class="container center">
+    <div class="row no-margin">
+        <div class="column-5 sidebar">
+            <nav class="nav-vertical pills nav-responsive-center nav-responsive-text">               
+                <?php include('../../includes/documentation/navigation.php'); ?>
+            </nav><!-- .nav-vertical -->
+        </div><!-- .column-5 -->
+        
+        <div class="column-19 content">
+            <h1 class="no-margin">Ampersand</h1>
+            
+            <hr />
+                        
+            <p>If you would like a more stylized ampersand, all that is necessary is adding the class <code>.amp</code> to any element containing the ampersand entity or character. Be sure to use <code>&lt;span&gt;&lt;/span&gt;</code> tags to display the ampersand as an inline element.</p>
+            
+            <div class="well preview">
+                <div class="preview-heading">
+                    <strong>Preview</strong>
+                </div><!-- .preview-heading -->
+                
+                <div class="preview-body">
+                    <h1 class="amp">&amp;</h1>
+                </div><!-- .preview-body -->
+                
+                <div class="preview-footer">
+                    <strong>Code</strong>
+                    
+                    <pre><code>&lt;span class=&quot;amp&quot;&gt;&amp;&lt;/span&gt;</code></pre>
+                </div><!-- .preview-footer -->
+            </div><!-- .preview -->
+        </div><!-- .column-19 -->
+    </div><!-- .row -->
+</div><!-- .container -->
+
+<?php include("../../includes/footer.php"); ?>

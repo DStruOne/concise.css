@@ -1,0 +1,54 @@
+<?php 
+    $page = 'documentation';
+    $innerpage = 'vendor-prefixes';
+    $tagline = 'Documentation / Vendor Prefixes Mixin';
+    include("../../includes/head.php"); 
+?>
+
+<?php include("../../includes/header.php"); ?>
+
+<div class="masthead">
+    <div class="container center">
+        <h1 class="kilo no-margin color-white">Documentation</h1>
+        
+        <h2 class="no-margin">Learn how to use all of great features that Concise provides.</h2>
+    </div><!-- .container -->
+</div><!-- .masthead -->
+
+<div class="container center">
+    <div class="row no-margin">
+        <div class="column-5 sidebar">
+            <nav class="nav-vertical pills nav-responsive-center nav-responsive-text">               
+                <?php include('../../includes/documentation/navigation.php'); ?>
+            </nav><!-- .nav-vertical -->
+        </div><!-- .column-5 -->
+        
+        <div class="column-19 content">
+            <h1 class="no-margin">Vendor Prefixes Mixin</h1>
+            
+            <hr />
+            
+            <p>In the <code>/generic/_mixins.scss</code>, we have a mixin that will allow you to easily write cross-browser compatible code for CSS3 features that have yet to be fully implemented. Browser prefixes included are:
+            
+                <ul>
+                    <li>Webkit Browsers <small>(Chrome, Safari)</small></li>
+                    <li>Internet Explorer</li>
+                    <li>Firefox</li>
+                    <li>Opera</li>
+                </ul>
+            </p>
+            
+            <p class="note"><strong>Note:</strong> We suggest using a CSS post-processing tool such as <a href="https://github.com/ai/autoprefixer" target="_blank">Autoprefixer</a> to add vendor prefixes to your CSS based on results from <a href="http://caniuse.com/" target="_blank">Can I Use</a>.</p>
+            
+            <div class="well preview">                
+                <div class="preview-footer">
+                    <strong>Code</strong>
+                    
+                    <pre><code>@include vendor(border-radius, 4px);</code></pre>
+                </div><!-- .preview-footer -->
+            </div><!-- .preview -->
+        </div><!-- .column-19 -->
+    </div><!-- .row -->
+</div><!-- .container -->
+
+<?php include("../../includes/footer.php"); ?>
