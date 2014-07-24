@@ -12,6 +12,76 @@
     <script type="text/javascript" src="//cdn.fusionads.net/fusion.js?zoneid=1332&serve=C6SDP2Y&placement=concisecss" id="_fusionads_js"></script>
   </div><!-- .masthead -->
 
-  {{ content }}
+  <div class="container center">
+    <div class="row no-margin">
+      <div class="column-5 sidebar">
+        <nav class="nav-vertical pills nav-responsive-center nav-responsive-text">
+          <ul>
+            <li class="text-uppercase">Layout</li>
+            <li><a href="{{ site.baseurl }}/documentation/layout/container">Container</a></li>
+            <li><a href="{{ site.baseurl }}/documentation/layout/grid">Grid</a></li>
+            <li><a href="{{ site.baseurl }}/documentation/layout/breakpoints">Breakpoints</a></li>
+          </ul>
+
+          <ul>
+            <li class="text-uppercase">Typography</li>
+            <li><a href="{{ site.baseurl }}/documentation/typography/headings">Headings</a></li>
+            <li><a href="{{ site.baseurl }}/documentation/typography/body">Body</a></li>
+            <li><a href="{{ site.baseurl }}/documentation/typography/emphasis">Emphasis</a></li>
+            <li><a href="{{ site.baseurl }}/documentation/typography/abbreviations">Abbreviations</a></li>
+            <li><a href="{{ site.baseurl }}/documentation/typography/blockquotes">Blockquotes</a></li>
+            <li><a href="{{ site.baseurl }}/documentation/typography/addresses">Addresses</a></li>
+            <li><a href="{{ site.baseurl }}/documentation/typography/positioning">Positioning</a></li>
+            <li><a href="{{ site.baseurl }}/documentation/typography/weights">Weights</a></li>
+            <li><a href="{{ site.baseurl }}/documentation/typography/colors">Colors</a></li>
+            <li><a href="{{ site.baseurl }}/documentation/typography/ampersand">Ampersand</a></li>
+          </ul>
+
+          <ul>
+            <li class="text-uppercase">Navigation</li>
+            <li><a href="{{ site.baseurl }}/documentation/navigation/nested-dropdowns">Nested Dropdowns</a></li>
+            <li><a href="{{ site.baseurl }}/documentation/navigation/jquery-dropdowns">jQuery Dropdowns</a></li>
+            <li><a href="{{ site.baseurl }}/documentation/navigation/vertical">Vertical</a></li>
+            <li><a href="{{ site.baseurl }}/documentation/navigation/responsive">Responsive</a></li>
+            <li><a href="{{ site.baseurl }}/documentation/navigation/breadcrumbs">Breadcrumbs</a></li>
+          </ul>
+
+          <ul>
+            <li class="text-uppercase">Elements</li>
+            <li><a href="{{ site.baseurl }}/documentation/elements/lists">Lists</a></li>
+            <li><a href="{{ site.baseurl }}/documentation/elements/code">Code</a></li>
+            <li><a href="{{ site.baseurl }}/documentation/elements/tables">Tables</a></li>
+            <li> <a href="{{ site.baseurl }}/documentation/elements/forms">Forms</a></li>
+            <li><a href="{{ site.baseurl }}/documentation/elements/buttons">Buttons</a></li>
+            <li><a href="{{ site.baseurl }}/documentation/elements/groups">Groups</a></li>
+            <li><a href="{{ site.baseurl }}/documentation/elements/wells">Wells</a></li>
+            <li><a href="{{ site.baseurl }}/documentation/elements/badges-labels">Badges &amp; Labels</a></li>
+            <li><a href="{{ site.baseurl }}/documentation/elements/progress-bars">Progress Bars</a></li>
+            <li><a href="{{ site.baseurl }}/documentation/elements/closeable">Closeable</a></li>
+          </ul>
+
+          <ul>
+            <li class="text-uppercase">Helper Classes</li>
+            <li><a href="{{ site.baseurl }}/documentation/helper-classes/background-colors">Background Colors</a></li>
+            <li><a href="{{ site.baseurl }}/documentation/helper-classes/border-radius">Border Radius</a></li>
+            <li><a href="{{ site.baseurl }}/documentation/helper-classes/pill">Pill</a></li>
+            <li><a href="{{ site.baseurl }}/documentation/helper-classes/full-width">Full Width</a></li>
+            <li><a href="{{ site.baseurl }}/documentation/helper-classes/show-hide">Show/Hide</a></li>
+            <li><a href="{{ site.baseurl }}/documentation/helper-classes/conditional-styling">Conditional Styling</a></li>
+            <li><a href="{{ site.baseurl }}/documentation/helper-classes/carets">Carets</a></li>
+            <li><a href="{{ site.baseurl }}/documentation/helper-classes/quick-floats">Quick Floats</a></li>
+            <li><a href="{{ site.baseurl }}/documentation/helper-classes/screen-reader">Screen Reader</a></li>
+            <li><a href="{{ site.baseurl }}/documentation/helper-classes/image-replacement">Image Replacement</a></li>
+            <li><a href="{{ site.baseurl }}/documentation/helper-classes/remove-margin">Remove Margin</a></li>
+            <li><a href="{{ site.baseurl }}/documentation/helper-classes/vendor-prefixes">Vendor Prefixes</a></li>
+          </ul>
+        </nav><!-- .nav-vertical -->        
+      </div><!-- .column-5 -->
+    
+      <div class="column-19 content">
+        {{ content }}
+      </div><!-- .column-19 -->
+    </div><!-- .row -->
+  </div><!-- .container -->
   
 {% include footer.html %}
